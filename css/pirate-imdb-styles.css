@@ -1,0 +1,30 @@
+div.pirate-all-links {
+    padding: 0;
+}
+
+div.pirate-under-title-desc {
+    margin-top: 1em;
+}
+
+div.pirate-next-to-text {
+    display: inline;
+    margin-left: 5px;
+}
+
+div.pirate-all-links a {
+    font-weight: bold !important;
+    font-size: small !important;
+    background-color: #F0F0D8;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Unvisited */
+div.pirate-all-links a:link, div.pirate-all-links a.unvisted {
+    color: #408C13 !important;
+}
+
+/* Visited */
+div.pirate-all-links a:visited, div.pirate-all-links a.visited {
+    color: #604848 !important;
+}

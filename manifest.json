@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Pirate IMDb",
+    "description": "This extension adds links to torrents sites on IMDb movie and TV series pages.",
+    "version": "0.1",
+    "icons": {
+        "16": "imgs/icon-16.png",
+        "48": "imgs/icon-48.png",
+        "128": "imgs/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://www.imdb.com/title/*", "https://www.imdb.com/title/*"],
+            "css": ["css/pirate-imdb-styles.css"],
+            "js": ["libs/jquery-3.2.0.min.js", "js/pirate-imdb.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "permissions": [
+        "tabs",
+        "http://www.imdb.com/title/*",
+        "https://www.imdb.com/title/*"
+    ]
+}
